@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+README.md
+.vscode
+.idea
+postgres-data
+media
+downloads
+temp
+

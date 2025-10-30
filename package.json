@@ -1,0 +1,53 @@
+{
+  "name": "youtube-sub-voice",
+  "version": "1.0.0",
+  "description": "YouTube to Subtitle and Voice - Convert YouTube videos to subtitles and voiceovers",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "worker": "tsx lib/workers/worker.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:migrate": "tsx lib/db/migrate.ts"
+  },
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "drizzle-orm": "^0.29.3",
+    "postgres": "^3.4.3",
+    "bullmq": "^5.1.9",
+    "redis": "^4.6.12",
+    "ioredis": "^5.3.2",
+    "openai": "^4.26.0",
+    "yt-dlp-wrap": "^2.3.14",
+    "fluent-ffmpeg": "^2.1.2",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "azure-cognitiveservices-speech-sdk": "^1.35.0",
+    "video.js": "^8.10.0",
+    "react-dropzone": "^14.2.3",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1",
+    "lucide-react": "^0.323.0",
+    "zod": "^3.22.4",
+    "nanoid": "^5.0.4",
+    "date-fns": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "drizzle-kit": "^0.20.12",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.33",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
+  }
+}
+
